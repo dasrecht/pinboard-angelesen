@@ -14,6 +14,8 @@ $success = $feed->init();
 // This function will grab the proper character encoding, as well as set the content type to text/html.
 $feed->handle_content_type();
 
+echo "The Feed URL: ". $feedurl;
+
 // When we end our PHP block, we want to make sure our DOCTYPE is on the top line to make
 // sure that the browser snaps into Standards Mode.
 foreach($feed->get_items() as $item) {
