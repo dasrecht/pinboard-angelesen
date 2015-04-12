@@ -1,2 +1,6 @@
 <?php
 $feedurl = "YOUR FEED URL HERE";
+
+// If you want to overwrite the cache duration of your local
+// RSS Cache (default: 30 seconds)
+// $ttl = 60

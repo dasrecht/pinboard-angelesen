@@ -7,7 +7,11 @@ echo file_exists('intro.md') ? file_get_contents('intro.md') : "";
 
 $feed = new SimplePie();
 $feed->set_feed_url($feedurl);
-$feed->set_cache_duration('10');
+if (isset($ttl)) {
+  $feed->set_cache_duration($ttl);
+} else {
+  $feed->set_cache_duration('30');
+}
 // Initialize the whole SimplePie object.  Read the feed, process it, parse it, cache it, and
 // all that other good stuff.  The feed's information will not be available to SimplePie before
 // this is called.
