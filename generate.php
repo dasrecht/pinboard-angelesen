@@ -1,5 +1,5 @@
 <?php
-include('simplepie/autoloader.php');
+include('vendor/autoload.php');
 include('config.php');
 
 // Include Intro Text

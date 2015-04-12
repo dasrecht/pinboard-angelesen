@@ -1,0 +1,12 @@
+{
+    "name": "bastianwidmer/angelesen",
+    "require": {
+        "simplepie/simplepie": "dev-master"
+    },
+    "authors": [
+        {
+            "name": "Bastian Widmer",
+            "email": "b.widmer@dasrecht.net"
+        }
+    ]
+}
