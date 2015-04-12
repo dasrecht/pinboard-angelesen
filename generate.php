@@ -20,7 +20,13 @@ $feed->handle_content_type();
 // When we end our PHP block, we want to make sure our DOCTYPE is on the top line to make
 // sure that the browser snaps into Standards Mode.
 foreach($feed->get_items() as $item) {
-echo "[".str_replace("[priv]","", $item->get_title())."](".$item->get_permalink().")\n\n";
-echo  html_entity_decode($item->get_content());
-echo "\n\n";
+  $article['title'] = str_replace("[priv] ","", $item->get_title());
+  $article['url'] = $item->get_permalink();
+  $article['parseurl'] =  parse_url($item->get_permalink());
+  $article['host'] = $article['parseurl']['host'];
+  $article['comment'] = html_entity_decode($item->get_content());
+  // Generate Output
+  echo "[".$article['title']."](".$article['url'].") <span style=\"color: #999999;\">(".$article['host'].")</span>\n\n";
+  echo  $article['comment'];
+  echo "\n\n";
 }
