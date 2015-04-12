@@ -2,6 +2,11 @@
 include('simplepie/autoloader.php');
 include('config.php')
 
+// Include Intro Text
+if(file_exists('intro.md') {
+  include('intro.md');
+}
+
 $feed = new SimplePie();
 $feed->set_feed_url($feedurl);
 $feed->set_cache_duration('10');
