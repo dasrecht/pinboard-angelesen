@@ -1,6 +1,6 @@
 <?php
 include('simplepie/autoloader.php');
-$feedurl = "YOUR PINBOARD FEED URL";
+include('config.php')
 
 $feed = new SimplePie();
 $feed->set_feed_url($feedurl);
