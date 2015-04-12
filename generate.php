@@ -3,9 +3,7 @@ include('simplepie/autoloader.php');
 include('config.php');
 
 // Include Intro Text
-if(file_exists('intro.md') {
-  include('intro.md');
-}
+echo file_exists('intro.md') ? file_get_contents('intro.md') : "";
 
 $feed = new SimplePie();
 $feed->set_feed_url($feedurl);
