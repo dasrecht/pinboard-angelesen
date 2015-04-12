@@ -1,5 +1,5 @@
 {
-    "name": "bastianwidmer/angelesen",
+    "name": "bastianwidmer/pinboard-angelesen",
     "require": {
         "simplepie/simplepie": "dev-master"
     },
