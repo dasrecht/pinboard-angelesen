@@ -1,6 +1,6 @@
 <?php
 include('simplepie/autoloader.php');
-include('config.php')
+include('config.php');
 
 // Include Intro Text
 if(file_exists('intro.md') {
