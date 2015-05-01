@@ -27,7 +27,7 @@ foreach($feed->get_items() as $item) {
   $article['title'] = str_replace("[priv] ","", $item->get_title());
   $article['url'] = $item->get_permalink();
   $article['parseurl'] =  parse_url($item->get_permalink());
-  $article['host'] = $article['parseurl']['host'];
+  $article['host'] = str_replace('www.', '', $article['parseurl']['host']);
   $article['comment'] = html_entity_decode($item->get_content());
   // Generate Output
   echo "[".$article['title']."](".$article['url'].") <span style=\"color: #999999;\">(".$article['host'].")</span>\n\n";
