@@ -1,6 +1,7 @@
 <?php
 include('vendor/autoload.php');
 include('config.php');
+echo file_exists('title.php') ? include('title.php') : "";
 
 // Include Intro Text
 echo file_exists('intro.md') ? file_get_contents('intro.md') : "";
