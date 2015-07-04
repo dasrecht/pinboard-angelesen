@@ -1,5 +1,10 @@
 <?php
 include('vendor/autoload.php');
+if(!file_exists('config.php'))
+{
+  echo "Oh no! config.php missing, consider creating it. There is config.php.sample as a start :-)\n";
+  exit;
+}
 include('config.php');
 
 // Include title.php if it's existing,
