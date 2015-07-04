@@ -1,5 +1,6 @@
 cache/*.spc
 preview.md
 intro.md
+title.php
 config.php
 /vendor/
