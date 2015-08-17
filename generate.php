@@ -13,7 +13,7 @@ if (file_exists('title.php'))
 
 // Include Intro Text
 echo file_exists('intro.md') ? file_get_contents('intro.md') : "";
-
+echo "\n";
 $feed = new SimplePie();
 $feed->set_feed_url($feedurl);
 if (isset($ttl)) {
