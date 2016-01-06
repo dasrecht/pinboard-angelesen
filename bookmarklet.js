@@ -23,4 +23,4 @@ if (document.getSelection) {
 } else {
     s = '';
 };
-document.location = 'https://pinboard.in/add?next=same&url=' + encodeURIComponent(location.href) + '&description=' + encodeURIComponent(s) + '&title=' + encodeURIComponent(document.title) + '&tags=2blog 2blog-' + yearNr + '-' + weekNr
+q=location.href;if(document.getSelection){d=document.getSelection();}else{d='';};p=document.title;void(open('https://pinboard.in/add?url='+encodeURIComponent(q)+'&description='+encodeURIComponent(d)+'&title='+encodeURIComponent(p) + '&tags=2blog 2blog-' + yearNr + '-' + weekNr,'Pinboard','toolbar=no,width=700,height=350'));
