@@ -44,3 +44,4 @@ foreach($feed->get_items() as $item) {
   echo  $article['comment'];
   echo "\n\n";
 }
+  echo "\n\n";
