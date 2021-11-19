@@ -40,7 +40,7 @@ foreach($feed->get_items() as $item) {
   $article['host'] = str_replace('www.', '', $article['parseurl']['host']);
   $article['comment'] = html_entity_decode($item->get_content());
   // Generate Output
-  echo "[".$article['title']."](".$article['url'].") <span style=\"color: #999999;\">(".$article['host'].")</span>\n\n";
+  echo "[".$article['title']."](".$article['url'].") *(".$article['host'].")*\n\n";
   echo  $article['comment'];
   echo "\n\n";
 }
