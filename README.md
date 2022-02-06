@@ -13,3 +13,20 @@ A simple aggregator for my weekly posts. Consumes a feed from pinboard.in and ex
 
 ### Adding an Intro Text
 - Add the file intro.md and upon running generate the intro text will be added.
+
+
+## Container things
+If you don't want to install php or composer, you can use the container approach
+
+### Use Docker for Composer
+If you want to use docker for composer, you can use the following docker command:
+
+```
+docker-compose run cli bash -c "composer install"
+```
+
+### Run Script via Docker
+
+```
+docker-compose run cli bash -c /app/generate
+```
