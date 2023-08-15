@@ -12,21 +12,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/simplepie/simplepie.git",
-                "reference": "baf82e891e0e91ef5fdab938ec37b6adeb3d4b2a"
+                "reference": "bb01ef4df7e7c977b9c28773e5958f026bc750d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/baf82e891e0e91ef5fdab938ec37b6adeb3d4b2a",
-                "reference": "baf82e891e0e91ef5fdab938ec37b6adeb3d4b2a",
+                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/bb01ef4df7e7c977b9c28773e5958f026bc750d6",
+                "reference": "bb01ef4df7e7c977b9c28773e5958f026bc750d6",
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
                 "ext-xml": "*",
                 "ext-xmlreader": "*",
-                "php": ">=5.6.0"
+                "php": ">=7.2.0"
             },
             "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.19 || ^3.8",
+                "mf2/mf2": "^0.5.0",
+                "phpstan/phpstan": "^1.10",
+                "psr/simple-cache": "^1 || ^2 || ^3",
                 "yoast/phpunit-polyfills": "^1.0.1"
             },
             "suggest": {
@@ -41,6 +45,9 @@
             "autoload": {
                 "psr-0": {
                     "SimplePie": "library"
+                },
+                "psr-4": {
+                    "SimplePie\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -76,7 +83,7 @@
                 "issues": "https://github.com/simplepie/simplepie/issues",
                 "source": "https://github.com/simplepie/simplepie/tree/master"
             },
-            "time": "2022-02-05T06:25:47+00:00"
+            "time": "2023-08-08T08:59:44+00:00"
         }
     ],
     "packages-dev": [],
@@ -89,5 +96,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
